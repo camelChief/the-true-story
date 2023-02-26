@@ -1,0 +1,164 @@
+section {
+	position: absolute;
+	top: 2.5%;
+	width: 47.5%;
+	height: 95%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+	color: rgba(51, 51, 51, 0.75);
+	overflow: hidden;
+}
+
+section:nth-of-type(1) {
+	left: 1.25%;
+}
+
+section:nth-of-type(2) {
+	right: 1.25%;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	font-family: Anton, sans-serif;
+	text-transform: uppercase;
+}
+
+h1 {
+	margin: -10px 0px -10px 0px;
+	font-size: 2em;
+}
+
+h2 {
+	margin: 0;
+	font-size: 42px;
+	color: rgba(255, 255, 255, 0.75);
+}
+
+footer img {
+	transition: 0.5s ease;
+}
+
+footer img:hover {
+	background-color: rgb(255, 255, 255);
+}
+
+#next {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 32px;
+	margin: 0;
+	opacity: 0.25;
+    cursor: pointer;
+	transition: 0.5s ease;
+}
+
+#next:hover {
+	opacity: 1;
+}
+
+#previous {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 32px;
+	margin: 0;
+	opacity: 0.25;
+    display: none;
+    cursor: pointer;
+	transition: 0.5s ease;
+}
+
+#previous:hover {
+	opacity: 1;
+}
+
+#paper {
+	position: relative;
+	width: 1200px;
+	height: 858px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: auto;
+	border-radius: 0px 0px 0px 0px;
+	overflow: hidden;
+}
+
+#content {
+	height: 75%;
+	columns: auto 2;
+	column-gap: 30px;
+	font-family: Roboto Slab, serif;
+    text-align: justify;
+}
+
+#content p {
+	text-indent: 3em;
+}
+
+#content p::first-line {
+	font-weight: bold;
+}
+
+#content img {
+	width: 100%;
+}
+
+#fold {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	border-bottom-left-radius: 25px;
+	overflow: hidden;
+}
+
+#fold img {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 600px;
+}
+
+#cover {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 23px;
+	height: 23px;
+	overflow: hidden;
+}
+
+#cover img {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 600px;
+}
+
+#shadow {
+	position: absolute;
+	bottom: 1px;
+	left: 19px;
+	width: 5px;
+	height: 20px;
+	background: rgba(0, 0, 0, 0.5);
+	transform: skewX(-5deg);
+}
+
+#fade {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.paper {
+	width: 600px;
+}
